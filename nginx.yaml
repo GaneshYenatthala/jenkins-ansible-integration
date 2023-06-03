@@ -1,0 +1,14 @@
+---
+- name: Simple Playbook
+  hosts: my_hosts
+  become: true
+  tasks:
+    - name: Install package
+      package:
+        name: nginx
+        state: present
+
+    - name: Start nginx service
+      service:
+        name: nginx
+        state: started
