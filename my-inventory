@@ -1,0 +1,6 @@
+
+[all:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+[my_hosts]
+host1 ansible_ssh_host=172.16.1.29 ansible_ssh_port=22 ansible_user=slave1
